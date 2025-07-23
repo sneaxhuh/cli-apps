@@ -36,6 +36,39 @@ A stunning command-line weather application for Ubuntu with colorful output, int
 
 ## 🚀 Usage
 
+### Global Access
+
+To run the weather app from anywhere in your terminal, you can create a symbolic link to the `weather.py` file in a directory that is in your system's `PATH`.
+
+1.  **Find a directory in your `PATH`**:
+
+    ```bash
+    echo $PATH
+    ```
+
+    Common choices are `/usr/local/bin` or `~/.local/bin`.
+
+2.  **Create a symbolic link**:
+
+    ```bash
+    sudo ln -s /path/to/your/weather.py /usr/local/bin/forecast
+    ```
+
+    Replace `/path/to/your/weather.py` with the absolute path to the `weather.py` file.
+
+3.  **Make the script executable**:
+
+    ```bash
+    chmod +x /path/to/your/weather.py
+    ```
+
+Now you can run the app like this:
+
+```bash
+forecast London
+forecast "New York" --units imperial
+```
+
 ### Basic Weather
 ```bash
 # Get current weather for a city
