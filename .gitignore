@@ -1,2 +1,26 @@
 node_modules
 .env
+
+# Environments
+.env
+.venv
+venv/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Cache
+.cache/
+.pytest_cache/
+__pycache__/
+.mypy_cache/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Other
+.DS_Store
+.vscode/
